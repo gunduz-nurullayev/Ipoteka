@@ -1,0 +1,13 @@
+select * from ipoteka;
+
+drop table ipoteka;
+
+create table ipoteka(
+odenis_tarixi date,
+faiz number(10,2),
+esas_mebleg number(10,2),
+ayliq_odenis number(10,2),
+qaliq_borc number(10,2)
+);
+insert into ipoteka(odenis_tarixi,faiz,esas_mebleg,ayliq_odenis,qaliq_borc)
+values(?,?,?,?,?);
